@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forme</title>
+</head>
+
+<body>
+    <form action="server1">
+
+        <fieldset>
+            <table>
+                <tr>
+                    <td><label for="ime">Korisnicko ime:</label></td>
+                    <td><input type="text" name="ime" id="ime" placeholder="Unesite korisnicko ime"></td>
+                </tr>
+                <tr>
+                    <td><label for="lozinka">Lozinka:</label></td>
+                    <td><input type="text" name="lozinka" id="lozinka" placeholder="Unesite lozinku"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="klub">Navija za:</label>
+                    </td>
+                    <td>
+                        <ul style="list-style: none; padding: 0; margin: 0;">
+                            <li><label for="partizan">Partizan</label>
+                                <input type="radio" name="partizan" id="partizan" value="1" checked>
+                            </li>
+                            <li><label for="zvezda">Crvenu zvezdu</label>
+                                <input type="radio" name="zvezda" id="zvezda" value="2">
+                            </li>
+                            <li><label for="vojvodina">Vojvodinu</label>
+                                <input type="radio" name="vojvodina" id="vojvodina" value="3">
+                            </li>
+                        </ul>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td><label for="hobi">Hobi:</label></td>
+                    <td>
+                        <ul style="list-style: none; padding: 0; margin: 0;">
+                            <li> <label for="knjige">Cita knjige</label>
+                                <input type="checkbox" id="knjige" name="knjige" checked>
+                            </li>
+                            <li><label for="tenis">Igra tenis</label>
+                                <input type="checkbox" id="tenis" name="tenis">
+                            </li>
+                            <li> <label for="gitara">Svira gitaru</label>
+                                <input type="checkbox" name="gitara" id="gitara">
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="Hrana">Omiljena hrana:</label></td>
+                    <td><select name="Hrana" id="Hrana">
+                            <option value="0">Srpska</option>
+                            <option value="1">Grcka</option>
+                            <option value="2">Italijanska</option>
+                            <option value="3">Nemacka</option>
+                        </select></td>
+
+                </tr>
+                <tr>
+                    <td><label for="muzika">Omiljena muzika:</label></td>
+                    <td>
+                        <select name="muzika" id="muzika" multiple>
+                            <option value="klasika">Klasika</option>
+                            <option value="Pop">Pop</option>
+                            <option value="Rock">Rock</option>
+                            <option value="Jazz">Jazz</option>
+                            <option value="Soul">Soul</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><label for="komentar">Unesi komentar:</label></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><textarea name="komentar" id="komentar" cols="30"
+                            rows="10">Unesite neki tekst...</textarea></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" name="posalji" id="posalji" value="POSALJI">
+                        <input type="reset" name="ponisti" id="ponisti" value="PONISTI">
+                        <input type="button" name="mojedugme" id="mojedugme" value="MOJE DUGME">
+                    </td>
+                </tr>
+
+
+            </table>
+        </fieldset>
+    </form>
+
+
+
+</body>
+
+</html>

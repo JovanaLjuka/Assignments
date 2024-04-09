@@ -1,0 +1,247 @@
+@font-face {
+  font-family: Poppins;
+  src: url(fonts/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: OpenSans;
+  src: url(fonts/Open_Sans/static/OpenSans-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  font-family: OpenSans;
+  width: 100vw;
+}
+
+:root {
+  --pink: hsl(322, 100%, 66%);
+  --VeryPaleCyan: hsl(193, 100%, 96%);
+  --VeryDarkCyan: hsl(192, 100%, 9%);
+  --GrayishBlue: hsl(208, 11%, 55%);
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p,
+h1,
+h2,
+h3 {
+  color: var(--VeryDarkCyan);
+  font-weight: 600;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Poppins;
+}
+
+header {
+  background-image: url(images/bg-hero-desktop.svg);
+  padding: 4% 5%;
+  width: 100%;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+}
+header img {
+  height: 50%;
+}
+header .logo {
+  display: grid;
+  place-items: center;
+}
+header .btn-1 {
+  background-color: white;
+  font-weight: 700;
+  padding: 1% 4%;
+  border: none;
+  border-radius: 40px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  color: var(--VeryDarkCyan);
+}
+header .btn-1:hover {
+  color: var(--GrayishBlue);
+  cursor: pointer;
+}
+
+.showcase {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5% 0;
+  width: 100%;
+}
+.showcase .showcase-left {
+  width: 40%;
+}
+.showcase .showcase-left h1 {
+  font-size: 3rem;
+}
+.showcase .showcase-left p {
+  padding: 7% 0;
+  font-weight: 600;
+}
+.showcase .showcase-left .btn-2 {
+  background-color: var(--pink);
+  border: none;
+  padding: 3% 14%;
+  border-radius: 40px;
+  color: white;
+  font-weight: 600;
+}
+.showcase .showcase-left .btn-2:hover {
+  background-color: hsl(322, 94%, 80%);
+  cursor: pointer;
+}
+.showcase .showcase-right {
+  width: 60%;
+  padding-left: 5%;
+}
+.showcase .showcase-right img {
+  width: 100%;
+}
+
+main {
+  padding: 4% 5%;
+}
+main .articles {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+main .articles article {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2%;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  gap: 5%;
+  padding: 5%;
+}
+main .articles article:nth-child(2) {
+  flex-direction: row-reverse;
+}
+main .articles article .text {
+  width: 50%;
+}
+main .articles article .text h2 {
+  margin-bottom: 4%;
+  font-weight: 700;
+  font-size: 2.2rem;
+}
+main .articles article .text p {
+  color: var(--GrayishBlue);
+  font-weight: 400;
+}
+main .articles article .img {
+  width: 50%;
+}
+main .articles article .img img {
+  width: 100%;
+}
+main .articles img {
+  width: 100%;
+  height: auto;
+}
+
+section.pop-up {
+  width: 600px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 40px;
+  padding: 3% 10%;
+  transform: translate(75%, 50%);
+  z-index: 1;
+}
+
+footer {
+  position: relative;
+  padding: 5%;
+  width: 100%;
+  background-color: var(--VeryDarkCyan);
+  z-index: -1;
+}
+footer .footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .footer .first {
+  width: 40%;
+}
+footer .footer .first .logo-footer {
+  margin-bottom: 20px;
+}
+footer .footer .first p {
+  color: white;
+  text-align: justify;
+}
+footer .footer .first .adress {
+  display: flex;
+  font-weight: 400;
+  gap: 20px;
+  width: 100%;
+  height: 100%;
+}
+footer .footer .first .adress img {
+  width: 20px;
+  height: 25px;
+}
+footer .footer .first .phone {
+  display: flex;
+  gap: 20px;
+}
+footer .footer .first .email {
+  display: flex;
+  gap: 20px;
+}
+footer .footer .second {
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+footer .footer .second a {
+  color: white;
+}
+footer .footer .second .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+footer .footer .second .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+footer .footer .third {
+  display: flex;
+  justify-content: space-evenly;
+  width: 20%;
+}
+footer .footer .third i {
+  color: white;
+}
+footer .bottom-right p {
+  color: white;
+}
+footer .bottom-right a {
+  color: white;
+}/*# sourceMappingURL=style.css.map */

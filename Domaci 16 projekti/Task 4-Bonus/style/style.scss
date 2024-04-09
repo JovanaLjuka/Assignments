@@ -1,0 +1,394 @@
+@font-face {
+    font-family: rubikregular;
+    src: url(../fonts/Rubik-Regular.ttf);
+}
+@font-face {
+    font-family: rubikmedium;
+    src: url(../fonts/Rubik-Medium.ttf);
+}
+@font-face {
+    font-family: rubikbold;
+    src: url(../fonts/Rubik-Bold.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+h1{
+    color: hsl(271, 36%, 24%);
+    font-family: rubikbold;
+    font-size: 250%;
+}
+p{
+    font-family: rubikregular;
+}
+html{
+    height: 100vh;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    font-size: 100%;
+    overflow: hidden;
+}
+.background{
+    height: 90%;
+    width: 30%;
+    background: linear-gradient(to bottom, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    border-bottom-left-radius: 250px;
+    border-bottom-right-radius: 250px;
+    position: relative;
+    left: -6%;
+}
+.background2{
+    height: 90%;
+    width: 30%;
+    background: linear-gradient(to bottom, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    border-top-left-radius: 250px;
+    border-top-right-radius: 250px;
+    position: relative;
+    top: 10%;
+    left: 16%;
+    opacity: 5%;
+}
+.tekst{
+    width: 30%;
+    position: absolute;
+    top: 35%;
+    left: 51%;
+    line-height: 25px;
+    h1{
+        padding-bottom: 7%;
+    }
+    p{
+        color: hsl(270, 7%, 64%);
+    }
+}
+.mobile{
+    height: 87vh;
+    width: 20%;
+    background-color: hsl(270, 20%, 96%);
+    border: 10px solid white;
+    border-radius: 30px;
+    box-shadow: 10px 10px 10px hsl(270, 20%, 96%);
+    position: absolute;
+    top: 5%;
+    left: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .header{
+        height: 11%;
+        padding-top: 7%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background: linear-gradient(to right,  hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+        border-top-right-radius: 30px;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        .icn{
+            i{
+                color: white;
+            }
+        }
+        .icn2{
+            i{
+                color: white;
+            }
+        }
+        .avatar{
+            width: 15%;
+            img{
+                width: 100%;
+                border-radius: 50%;
+                border: 2px solid white;
+            }
+        }
+        .text{
+            display: flex;
+            flex-direction: column;
+            h2{
+                font-size: 100%;
+                font-family: rubikbold;
+                color: white;
+                padding-bottom: 2%;
+            }
+            p{
+                font-family: rubikregular;
+                color: hsl(276, 100%, 81%);
+                font-size: 75%;
+            }
+        }
+        .icn2{
+            margin-left: 27%;
+        }
+    }
+}
+.wheader{
+    position: absolute;
+    height: 5%;
+    width: 56%;
+    background-color: white;
+    border-radius: 30px;
+    left: 23%;
+    top: -2%;
+}
+.section{
+    padding: 4%;
+}
+.cht{
+    width: 65%;
+    background-color: hsl(276, 55%, 92%);
+    margin-bottom: 3%;
+    padding: 3%;
+    border-radius: 10px;
+    border-bottom-left-radius: 5px;
+    p{
+        font-size: 60%;
+        color: hsl(276, 55%, 52%);
+        font-family: rubikregular;
+    }
+}
+.slike{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: 'a b c';
+    gap: 5%;
+    width: 50%;
+    position: relative;
+    left: 50%;
+    .dog1{
+        grid-area: a;
+        img{
+            width: 100%;
+            border-radius: 10px;
+        }
+    }
+    .dog2{
+        grid-area: b;
+        img{
+            width: 100%;
+            border-radius: 10px;
+        }
+    }
+    .dog3{
+        grid-area: c;
+        img{
+            width: 100%;
+            border-radius: 10px;
+        }
+    }
+}
+.cht2{
+    width: 60%;
+    background-color: #fff;
+    margin-bottom: 3%;
+    padding: 3%;
+    border-radius: 10px;
+    border-bottom-right-radius: 5px;
+    position: relative;
+    left: 40%;
+    margin-top: 3%;
+    p{
+        font-size: 60%;
+        color: hsl(271, 15%, 43%);
+        font-family: rubikregular;
+    }
+
+}
+.cht3{
+    width: 37%;
+    background-color: #fff;
+    margin-bottom: 3%;
+    padding: 3%;
+    border-radius: 10px;
+    border-bottom-right-radius: 5px;
+    position: relative;
+    left: 62%;
+    margin-top: 3%;
+    p{
+        font-size: 60%;
+        color: hsl(271, 15%, 43%);
+        font-family: rubikregular;
+    }
+ 
+}
+.price{
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+    background: linear-gradient(to left,  hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+    margin-bottom: 3%;
+    padding: 3%;
+    border-radius: 10px;
+    border-bottom-left-radius: 5px;
+    i{
+        color: hsl(289, 100%, 72%);
+    }
+    p{
+        font-size: 60%;
+        color: #fff;
+        font-family: rubikregular;
+        padding-left: 5%;
+        display: flex;
+        align-items: center;
+    } 
+    .cena1{
+        font-family: rubikbold;
+        font-size: 65%;
+        margin-left: 10%;
+    }
+    .cena2{
+        font-family: rubikbold;
+        font-size: 65%;
+        margin-left: 23%;
+    }
+}
+.input{
+    height: 6%;
+    width: 90%;
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p{
+        font-family: rubikregular;
+        color: hsl(270, 7%, 64%);
+        padding-left: 20px;
+        font-size: 65%;
+    }
+    .btn{
+        background-color: hsl(271, 36%, 24%);
+        border-radius: 50%;
+        margin-right: 2%;
+        width: 10%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        i{
+            color: white;
+            font-size: 65%;
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    body{
+            width: 375px;
+            overflow: scroll;
+            .background{
+                width: 200%;
+                top: 0;
+                left: -30%;
+            }
+            .background2{
+                height: 50%;
+                width: 100%;
+                top: 100%;
+                left: 10%;
+            }
+            .tekst{
+                width: 100%;
+                position: absolute;
+                top: 110%;
+                left: 0;
+                line-height: 25px;
+                text-align: center;
+                font-size: 80%;
+                padding: 0 10%;
+            h1{
+                padding-bottom: 7%;
+            }
+            p{
+                color: hsl(270, 7%, 64%);
+            }
+            }
+            .mobile{
+                height: 90%;
+                width: 70%;
+                top: 5%;
+                left: 20%;
+                .header{
+                    height: 10%;
+                    padding-top: 5%;
+                    .avatar{
+                        width: 10%;
+                    }
+                    .text{
+                        h2{
+                            font-size: 75%;
+                        }
+                        p{
+                            font-size: 65%;
+                        }
+                    }
+                    .icn2{
+                        margin-left: 27%;
+                        margin-right: 5%;
+                        opacity: 50%;
+                    }
+                }
+                .cht{
+                    width: 50%;
+                    margin-bottom: 2%;
+                    p{
+                        font-size: 50%;
+                    }
+                }
+                .cht2{
+                    width: 50%;
+                    margin-bottom: 0;
+                    margin-top: 2%;
+                    position: relative;
+                    left: 50%;
+                    p{
+                        font-size: 50%;
+                    }
+                }
+                .cht3{
+                    width: 35%;
+                    margin-bottom: 0;
+                    padding: 3%;
+                    position: relative;
+                    left: 65%;
+                    margin-top: 2%;
+                    p{
+                        font-size: 50%;
+                    }
+                 
+                }
+                .price{
+                    width: 50%;
+                    align-items: center;
+                    i{
+                        font-size: 55%;
+                    }
+                    p{
+                        font-size: 50%;
+                        display: flex;
+                        align-items: center;
+                    } 
+                    .cena1{
+                        font-size: 40%;
+                        margin-left: 10%;
+                    }
+                    .cena2{
+                        font-size: 40%;
+                    }
+                }
+}
+}
+}

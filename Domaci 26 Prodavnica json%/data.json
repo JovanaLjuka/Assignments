@@ -1,0 +1,146 @@
+[
+    {
+        "id": 1,
+        "brend": "Chanel",
+        "model": "Chanel No.5 Eau de Parfum",
+        "slika": {
+            "src": "images/Chanel5.jpg",
+            "alt": "Chanel No.5"
+        },
+        "cena": 150,
+        "popust": 0,
+        "miris": "Floral"
+    },
+    {
+        "id": 2,
+        "brend": "Chanel",
+        "model": "Chanel Chance Eau de Toilette",
+        "slika": {
+            "src": "images/ChanelChance.jpg",
+            "alt": "Chanel Chance"
+        },
+        "cena": 120,
+        "popust": 10,
+        "miris": "Floral"
+    },
+    {
+        "id": 3,
+        "brend": "Chanel",
+        "model": "Chanel Noir",
+        "slika": {
+            "src": "images/ChanelNoir.jpg",
+            "alt": "Chanel Noir"
+        },
+        "cena": 160,
+        "popust": 20,
+        "miris": "Oriental"
+    },
+    {
+        "id": 4,
+        "brend": "Dolce & Gabbana",
+        "model": "Dolce & Gabbana The One Eau de Parfum",
+        "slika": {
+            "src": "images/DGTheOne.jpg",
+            "alt": "Dolce & Gabbana The One Eau de Parfum"
+        },
+        "cena": 100,
+        "popust": 0,
+        "miris": "Oriental"
+    },
+    {
+        "id": 5,
+        "brend": "Dior",
+        "model": "Dior Joy Eau de Parfum",
+        "slika": {
+            "src": "images/DiorJoy.avif",
+            "alt": "Dior Joy Eau de Parfum"
+        },
+        "cena": 140,
+        "popust": 10,
+        "miris": "Floral"
+    },
+    {
+        "id": 6,
+        "brend": "Dior",
+        "model": "Dior J'adore Eau de Parfum",
+        "slika": {
+            "src": "images/DiorJadore.jpg",
+            "alt": "Dior J'adore Eau de Parfum"
+        },
+        "cena": 160,
+        "popust": 10,
+        "miris": "Floral"
+    },
+    {
+        "id": 7,
+        "brend": "Dior",
+        "model": "Dior Miss Dior Eau de Parfum",
+        "slika": {
+            "src": "images/DiorMiss.jpg",
+            "alt": "Dior Miss Dior Eau de Parfum"
+        },
+        "cena": 130,
+        "popust": 20,
+        "miris": "Floral"
+    },
+    {
+        "id": 8,
+        "brend": "Lancôme",
+        "model": "Lancôme Idôle Eau de Parfum",
+        "slika": {
+            "src": "images/LancomeIdole.jpg",
+            "alt": "Lancôme Idôle Eau de Parfum"
+        },
+        "cena": 110,
+        "popust": 0,
+        "miris": "Floral"
+    },
+    {
+        "id": 9,
+        "brend": "Lancôme",
+        "model": "Lancôme La Vie Est Belle Eau de Parfum",
+        "slika": {
+            "src": "images/LancomeLEB.jpg",
+            "alt": "Lancôme La Vie Est Belle Eau de Parfum"
+        },
+        "cena": 120,
+        "popust": 20,
+        "miris": "Floral"
+    },
+    {
+        "id": 10,
+        "brend": "Tom Ford",
+        "model": "Tom Ford Lost Cherry Eau de Parfum",
+        "slika": {
+            "src": "images/TomFordLostCherry.jpg",
+            "alt": "Tom Ford Lost Cherry Eau de Parfum"
+        },
+        "cena": 400,
+        "popust": 0,
+        "miris": "Fruity"
+    },
+    {
+        "id": 11,
+        "brend": "Tom Ford",
+        "model": "Tom Ford Rose Prick Eau de Parfum",
+        "slika": {
+            "src": "images/TomFordRosePrick.avif",
+            "alt": "Tom Ford Rose Prick Eau de Parfum"
+        },
+        "cena": 350,
+        "popust": 10,
+        "miris": "Floral"
+    },
+    {
+        "id": 10,
+        "brend": "Tom Ford",
+        "model": "Tom Ford Soleil Blanc Eau de Parfum",
+        "slika": {
+            "src": "images/TomFordSoleil.png",
+            "alt": "Tom Ford Soleil Blanc Eau de Parfum"
+        },
+        "cena": 300,
+        "popust": 20,
+        "miris": "Floral"
+    }
+]

@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+}
+
+.sakrij{
+    visibility: hidden;
+}
+
+.sredi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    width: 200px;
+}

@@ -1,0 +1,83 @@
+@font-face {
+    font-family: Julee;
+    src: url(fonts/Julee-Regular.ttf);
+}
+
+@font-face {
+    font-family: SofiaSans;
+    src: url(fonts/SofiaSansCondensed-Italic-VariableFont_wght.ttf);
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+.font1,
+#contact-us {
+    font-family: Julee, sans-serif;
+}
+
+.font2 {
+    font-family: SofiaSans, sans-serif;
+}
+
+.showcase {
+    background-image: url(images/slider.jpg);
+    background-position: center;
+    width: auto;
+    height: 900px;
+}
+
+.topcontent {
+    background-color: rgb(28, 26, 26);
+}
+
+.topcontent>.social,
+.font2,
+.phone {
+    color: white;
+}
+
+.tittle>h1,
+p {
+    color: rgb(165, 115, 128);
+}
+
+.showcase>h2,
+p,
+a {
+    color: rgb(165, 115, 128);
+}
+
+.tekstuslici>h2 {
+    color: rgb(165, 115, 128);
+}
+
+.lista {
+    list-style: none;
+    padding: 0;
+}
+
+.lista>li {
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 0;
+    padding: 0;
+}
+
+.pages {
+    margin: 0;
+    padding: 0;
+}
+
+.tekstuslici {
+    padding: 100px;
+    width: 600px;
+
+}

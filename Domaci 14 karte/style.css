@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: auto;
+}
+
+.prvi,
+.drugi,
+.treci,
+.cetvrti {
+    width: 300px;
+    height: 500px;
+    background-color: rgb(250, 242, 242);
+    border: 2px solid black;
+    border-radius: 15px;
+    position: absolute;
+}
+
+img {
+    width: 113px;
+    height: 115px;
+}
+
+h2 {
+    font-size: 113px;
+}
+
+.prvi {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.drugi {
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.treci {
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.cetvrti {
+    margin-top: 80px;
+    margin-left: 80px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.flex1 {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.flex2 {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.flex1>img {
+    align-self: flex-end;
+}
+
+.flex2>h2 {
+    align-self: flex-end;
+}

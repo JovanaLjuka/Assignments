@@ -1,0 +1,1468 @@
+@font-face {
+  font-family: montbold;
+  src: url(../fonts/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: montmedium;
+  src: url(../fonts/Montserrat-Medium.ttf);
+}
+@font-face {
+  font-family: montregular;
+  src: url(../fonts/Montserrat-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+$bela: #f7f7f7;
+$orange: #f7b74f;
+$svetloplava: #87c5ec;
+$tamnoplava: #4a79bc;
+$dark: #2e2d2c;
+$tamnosiva: #3c3c3b;
+$svetlosiva: #575756;
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+.wrapper {
+  width: 1100px;
+}
+.submenu {
+  background-color: $bela;
+  font-family: montbold;
+  color: $tamnosiva;
+  position: absolute;
+  padding: 15px;
+  p {
+    line-height: 23px;
+  }
+  display: none;
+}
+header {
+  display: flex;
+  justify-content: center;
+}
+.hamburger {
+  position: absolute;
+  right: 0;
+  display: none;
+  .bar {
+    height: 2px;
+    width: 30px;
+    margin: 3px 0;
+    background-color: $dark;
+  }
+  .bar2 {
+    height: 2px;
+    width: 24px;
+    margin: 3px 0;
+    background-color: $dark;
+  }
+}
+input[id='inp']:checked + #global {
+  display: block;
+}
+#inp {
+  display: none;
+}
+.header {
+  position: fixed;
+  z-index: 9999;
+  .nav {
+    background-color: $bela;
+    align-items: center;
+    font-family: montbold;
+    color: $dark;
+    display: flex;
+    justify-content: space-between;
+    .logo {
+      padding: 0 3%;
+      width: 20%;
+    }
+    .navglobalitems {
+      display: block;
+      width: 80%;
+      .navglb2 {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        .menu {
+          ul {
+            display: flex;
+            li {
+              padding: 5% 10px;
+              a {
+                color: $tamnosiva;
+              }
+            }
+            li:hover {
+              border-bottom: 3px solid $orange;
+            }
+            li:active {
+              background-color: #b5b3b3;
+            }
+          }
+        }
+        .sign {
+          width: 30%;
+          padding-right: 3%;
+          ul {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            height: 100%;
+            li {
+              padding-left: 10px;
+              a {
+                color: $tamnosiva;
+                font-family: montbold;
+              }
+            }
+            .submenu {
+              text-align: center;
+            }
+            .submenu p {
+              color: $svetlosiva;
+            }
+            li a:hover {
+              color: $orange;
+            }
+            .smenu:hover .submenu {
+              display: block;
+            }
+            .submenu p:hover {
+              transform: scale(1.2);
+              color: $dark;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.cover {
+  height: 100vh;
+  background-image: url(../images/4k-wallpaper-background-beautiful-853199.png);
+  background-position: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  padding: 10% 0;
+  .wrapper {
+    display: flex;
+    .levo {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      h1 {
+        font-family: montbold;
+        font-size: 400%;
+        color: $bela;
+      }
+      p {
+        font-family: montmedium;
+        color: $bela;
+        line-height: 26px;
+        font-size: 90%;
+      }
+      .btns {
+        display: flex;
+        .btn1 {
+          background-color: white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 25%;
+          border-radius: 5px;
+          margin-right: 5%;
+          p {
+            color: $tamnosiva;
+            font-family: montregular;
+            font-size: 90%;
+            padding: 5%;
+          }
+        }
+        .btn1:hover {
+          cursor: pointer;
+          background-color: $bela;
+          p {
+            color: black;
+          }
+        }
+        .btn2 {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 35%;
+          border-radius: 5px;
+          border: 1px solid white;
+          i {
+            color: white;
+          }
+          p {
+            color: white;
+            font-family: montregular;
+            font-size: 90%;
+            padding-left: 5%;
+          }
+        }
+        .btn2:hover {
+          cursor: pointer;
+          background-color: $bela;
+          i {
+            color: $tamnosiva;
+          }
+          p {
+            color: $tamnosiva;
+          }
+        }
+      }
+    }
+    .desno {
+      display: flex;
+      width: 50%;
+      justify-content: flex-end;
+      align-items: flex-end;
+      height: 120%;
+      .left {
+        width: 60%;
+        h2 {
+          font-family: montmedium;
+          padding-bottom: 5%;
+          font-size: 120%;
+          color: $dark;
+        }
+        p {
+          font-family: montregular;
+          line-height: 17px;
+          color: $dark;
+        }
+      }
+      .right {
+        .absoluteright {
+          position: absolute;
+          font-size: 1500%;
+          opacity: 30%;
+          top: 62%;
+          left: 55%;
+        }
+        .headerright {
+          transform: rotate(270deg);
+          p {
+            font-family: montregular;
+            color: $tamnosiva;
+          }
+          h2 {
+            font-family: montbold;
+            font-size: 100%;
+          }
+          img {
+            position: absolute;
+            left: 110%;
+            transform: rotate(90deg);
+          }
+        }
+      }
+    }
+  }
+}
+.destinations {
+  height: 70vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  .populartekst {
+    width: 45%;
+    padding-left: 13%;
+    h2 {
+      font-family: montbold;
+      color: $tamnoplava;
+      font-size: 150%;
+      padding-bottom: 5%;
+    }
+    p {
+      font-family: montmedium;
+      color: $dark;
+      line-height: 24px;
+      padding-bottom: 5%;
+    }
+    .btn1 {
+      background-color: $dark;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 25%;
+      border-radius: 5px;
+      margin-right: 5%;
+      p {
+        color: $bela;
+        font-family: montregular;
+        font-size: 90%;
+        padding: 5%;
+      }
+    }
+    .btn1:hover {
+      cursor: pointer;
+      background-color: $svetlosiva;
+    }
+  }
+  .absoluteexplore {
+    position: absolute;
+    font-size: 250%;
+    font-family: montbold;
+    color: $svetlosiva;
+    opacity: 20%;
+    top: 114%;
+    left: 13%;
+  }
+  .slider {
+    width: 50%;
+    height: 70%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: 'a b c';
+    gap: 5%;
+    position: relative;
+    right: -5%;
+    .item1 {
+      grid-area: a;
+      background-image: url(../images/slider-image1.png);
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      p {
+        align-self: flex-end;
+        color: white;
+        font-family: montbold;
+        font-size: 70%;
+        padding-bottom: 5%;
+      }
+      .fa-solid.fa-angle-left {
+        padding-left: 5%;
+        color: white;
+        font-size: 150%;
+      }
+    }
+    .item2 {
+      grid-area: b;
+      background-image: url(../images/slider-image2.png);
+      border-radius: 5px;
+      display: flex;
+      align-items: flex-end;
+      p {
+        width: 100%;
+        align-self: flex-end;
+        color: white;
+        font-family: montbold;
+        font-size: 70%;
+        padding-bottom: 5%;
+        padding-left: 24.72px;
+      }
+    }
+    .item3 {
+      grid-area: c;
+      background-image: url(../images/slider-image3.png);
+      background-size: cover;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .fa-solid.fa-angle-right {
+        padding-right: 40%;
+        color: white;
+        font-size: 150%;
+      }
+      .paraf {
+        align-self: flex-end;
+        padding-bottom: 5%;
+        p {
+          color: white;
+          font-family: montbold;
+          font-size: 70%;
+          padding-left: 25.72px;
+        }
+      }
+    }
+  }
+}
+.plavo {
+  background-color: $svetloplava;
+  background-image: url(../icon/people-vector.png);
+  background-repeat: no-repeat;
+  background-position: 90% 70%;
+  background-size: 40%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h2 {
+    font-family: montbold;
+    color: $bela;
+    padding-top: 3%;
+    padding-bottom: 5%;
+    display: flex;
+    justify-content: center;
+  }
+  .absoluteflex {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    .itemsabslt {
+      display: flex;
+      flex-direction: column;
+      .itemsbus {
+        display: flex;
+        justify-content: space-between;
+        background-color: $bela;
+        border-radius: 5px;
+        width: 70%;
+        margin-bottom: 2%;
+        .bus {
+          padding: 2% 5%;
+        }
+        .aboutbus {
+          width: 60%;
+          padding-right: 5%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          h3 {
+            font-family: montbold;
+            color: $tamnosiva;
+            padding-bottom: 3%;
+            font-size: 130%;
+          }
+          p {
+            font-family: montregular;
+            color: $svetlosiva;
+            font-size: 90%;
+          }
+        }
+        .price45 {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          border-left: 7px dotted $svetlosiva;
+          width: 20%;
+          p {
+            font-family: montbold;
+            color: $orange;
+            font-size: 150%;
+          }
+          .btn1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $svetloplava;
+            height: 30%;
+            width: 50%;
+            border-radius: 5px;
+            margin-top: 5%;
+            p {
+              font-family: montregular;
+              font-size: 100%;
+              color: $bela;
+            }
+          }
+          .btn1:hover {
+            background-color: $tamnoplava;
+            cursor: pointer;
+          }
+        }
+      }
+      .itemsall {
+        display: flex;
+        justify-content: space-between;
+        background-color: $bela;
+        border-radius: 5px;
+        width: 57%;
+        margin-bottom: 2%;
+        .icn {
+          padding: 2% 5%;
+        }
+        .about {
+          width: 60%;
+          padding-right: 5%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          h3 {
+            font-family: montbold;
+            color: $tamnosiva;
+            padding-bottom: 3%;
+            font-size: 100%;
+          }
+          p {
+            font-family: montregular;
+            color: $svetlosiva;
+            font-size: 60%;
+          }
+        }
+        .price85 {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          border-left: 7px dotted $svetlosiva;
+          width: 20%;
+          p {
+            font-family: montbold;
+            color: $orange;
+            font-size: 120%;
+          }
+          .btn1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $svetloplava;
+            height: 30%;
+            width: 50%;
+            border-radius: 5px;
+            margin-top: 5%;
+            p {
+              font-family: montregular;
+              font-size: 100%;
+              color: $bela;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.traveling {
+  display: flex;
+  justify-content: center;
+  padding: 2% 0;
+  height: 180vh;
+  .wcontainer {
+    display: flex;
+    flex-direction: column;
+  }
+  h2 {
+    display: flex;
+    justify-content: center;
+    font-family: montbold;
+    padding-bottom: 5%;
+  }
+  .gradovi {
+    display: flex;
+    height: 43%;
+    .centralno {
+      width: 50%;
+      background-color: $bela;
+      padding: 0 2%;
+
+      h3 {
+        font-family: montbold;
+        color: $dark;
+        font-size: 110%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5%;
+      }
+      .gridgradovi {
+        height: 80%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        gap: 2%;
+        grid-template-areas:
+          'a'
+          'b'
+          'c'
+          'd'
+          'f';
+        .grad1 {
+          grid-area: a;
+          background-image: url(../images/city-1.png);
+          border-radius: 10px;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          padding-right: 5%;
+          p {
+            font-family: montbold;
+            color: white;
+            font-size: 90%;
+            padding-right: 3%;
+          }
+          i {
+            color: white;
+            font-size: 70%;
+          }
+        }
+        .grad2 {
+          grid-area: b;
+          background-image: url(../images/city-2.png);
+          border-radius: 10px;
+          padding-right: 5%;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          padding-right: 5%;
+          p {
+            font-family: montbold;
+            color: white;
+            font-size: 90%;
+            padding-right: 3%;
+          }
+          i {
+            color: white;
+            font-size: 70%;
+          }
+        }
+        .grad3 {
+          grid-area: c;
+          background-image: url(../images/city-3.png);
+          border-radius: 10px;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          padding-right: 5%;
+          p {
+            font-family: montbold;
+            color: white;
+            font-size: 90%;
+            padding-right: 3%;
+          }
+          i {
+            color: white;
+            font-size: 70%;
+          }
+        }
+        .grad4 {
+          grid-area: d;
+          background-image: url(../images/city-4.png);
+          border-radius: 10px;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          padding-right: 5%;
+          p {
+            font-family: montbold;
+            color: white;
+            font-size: 90%;
+            padding-right: 3%;
+          }
+          i {
+            color: white;
+            font-size: 70%;
+          }
+        }
+        .grad5 {
+          grid-area: f;
+          background-image: url(../images/city-5.png);
+          border-radius: 10px;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          padding-right: 5%;
+          p {
+            font-family: montbold;
+            color: white;
+            font-size: 90%;
+            padding-right: 3%;
+          }
+          i {
+            color: white;
+            font-size: 70%;
+          }
+        }
+      }
+    }
+    .container {
+      display: flex;
+      align-items: center;
+      width: 35%;
+    }
+    .lplavo {
+      padding: 5%;
+      background-color: $tamnoplava;
+      width: 150%;
+      height: 80%;
+      h3 {
+        font-family: montbold;
+        color: $bela;
+        padding-bottom: 10%;
+        font-size: 100%;
+      }
+      h5 {
+        font-family: montbold;
+        color: $bela;
+        padding-bottom: 2%;
+        font-size: 70%;
+      }
+      p {
+        font-family: montregular;
+        color: $bela;
+        line-height: 18px;
+        padding-bottom: 10%;
+        font-size: 60%;
+      }
+      .btn1 {
+        background-color: $dark;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        margin-right: 5%;
+        width: 30%;
+        p {
+          color: $bela;
+          font-family: montregular;
+          font-size: 60%;
+          padding: 7% 0;
+        }
+      }
+      .btn1:hover {
+        cursor: pointer;
+        background-color: $svetlosiva;
+      }
+    }
+    .container2 {
+      display: flex;
+      align-items: center;
+      width: 15%;
+      .dplavo {
+        background-color: $tamnoplava;
+        width: 100%;
+        height: 80%;
+      }
+    }
+  }
+  .tekstovi {
+    padding: 10% 0;
+    padding-right: 8%;
+    h3 {
+      font-family: montmedium;
+      font-size: 130%;
+      color: $dark;
+      padding-bottom: 3%;
+    }
+    a {
+      color: $tamnoplava;
+    }
+    ul {
+      li {
+        p {
+          display: flex;
+          align-items: center;
+          i {
+            font-size: 40%;
+            padding-right: 2%;
+            color: $dark;
+          }
+        }
+      }
+    }
+    p {
+      font-family: montregular;
+      font-size: 90%;
+      color: $tamnosiva;
+      padding-bottom: 3%;
+    }
+    h4 {
+      font-family: montmedium;
+      font-size: 110%;
+      color: $dark;
+      padding-bottom: 3%;
+    }
+  }
+}
+.forma {
+  background-color: $bela;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  h2 {
+    font-family: montbold;
+    display: flex;
+    justify-content: center;
+    padding: 5% 0;
+  }
+  .containerforma {
+    display: flex;
+    height: 58%;
+    .polje1 {
+      width: 35%;
+      background-image: url(../icon/Vector\ Smart\ Object-2.png);
+      background-repeat: no-repeat;
+      background-size: 90%;
+      background-position: 100% 90%;
+    }
+    .polje2 {
+      display: flex;
+      flex-direction: column;
+      width: 30%;
+      background-image: url(../icon/Vector\ Smart\ Object.png);
+      background-size: 65%;
+      background-repeat: no-repeat;
+    }
+    .poljeforma {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      label {
+        font-family: montbold;
+        font-size: 80%;
+        color: $dark;
+        padding-bottom: 1%;
+      }
+      #name {
+        height: 12%;
+        border-radius: 5px;
+        font-family: montregular;
+        padding-left: 3%;
+        margin-bottom: 3%;
+      }
+      #e-mail {
+        height: 12%;
+        border-radius: 5px;
+        font-family: montregular;
+        padding-left: 3%;
+        margin-bottom: 3%;
+      }
+      #message {
+        height: 50%;
+        border-radius: 5px;
+        font-family: montregular;
+        padding-left: 3%;
+        margin-bottom: 3%;
+        padding-top: 2%;
+      }
+      .checkbox {
+        display: flex;
+        p {
+          font-family: montregular;
+          font-size: 90%;
+          padding-left: 2%;
+          color: $tamnosiva;
+        }
+        span {
+          font-family: montbold;
+          color: $dark;
+        }
+      }
+      .btn1 {
+        background-color: $dark;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        width: 30%;
+        margin-top: 5%;
+        p {
+          color: $bela;
+          font-family: montregular;
+          font-size: 80%;
+          padding: 10% 0;
+        }
+      }
+      .btn1:hover {
+        cursor: pointer;
+        background-color: $svetlosiva;
+      }
+    }
+  }
+}
+.predfooter {
+  height: 60vh;
+  background-color: $tamnoplava;
+  display: flex;
+  justify-content: center;
+  .itemspred {
+    display: flex;
+    justify-content: space-between;
+    padding: 5% 0;
+    h3 {
+      font-family: montbold;
+      color: $bela;
+      font-size: 100%;
+    }
+    p {
+      font-family: montmedium;
+      color: $bela;
+      font-size: 70%;
+    }
+    .company {
+      width: 40%;
+      .logo2 {
+        padding-bottom: 5%;
+        padding-left: 5%;
+      }
+      ul {
+        li {
+          padding: 5%;
+        }
+      }
+    }
+    .features {
+      h3 {
+        padding-bottom: 50%;
+      }
+      ul {
+        li {
+          padding-bottom: 23%;
+        }
+      }
+    }
+    .about {
+      h3 {
+        padding-bottom: 60%;
+      }
+      ul {
+        li {
+          padding-bottom: 30%;
+        }
+      }
+    }
+    .freetools {
+      h3 {
+        padding-bottom: 40%;
+      }
+      li {
+        padding-bottom: 20%;
+      }
+    }
+  }
+}
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: $svetloplava;
+  height: 7%;
+  p {
+    font-family: montmedium;
+    color: $bela;
+    font-size: 85%;
+    width: 100%;
+  }
+  .footeritems {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+  .social {
+    display: flex;
+    width: 10%;
+    justify-content: space-between;
+    width: 15%;
+    .soc {
+      max-width: 100%;
+      i {
+        display: inline-block;
+        color: $bela;
+        font-size: 160%;
+        padding: 0 20%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  body {
+    width: 768px;
+  }
+  .wrapper {
+    width: 768px;
+  }
+  .hamburger {
+    display: block;
+    padding-right: 2%;
+  }
+  header {
+    font-size: 50%;
+  }
+  .nav {
+    padding: 1% 0;
+  }
+  .navglobalitems {
+    width: 100%;
+    .navglb2 {
+      .sign {
+        margin-right: 5%;
+      }
+    }
+  }
+  #global {
+    display: none;
+  }
+  .logo {
+    img {
+      width: 80%;
+    }
+  }
+  .cover {
+    font-size: 80%;
+    .wrapper {
+      width: 90%;
+    }
+  }
+  .desno {
+    padding-bottom: 5%;
+  }
+  .destinations {
+    font-size: 80%;
+    justify-content: flex-start;
+    .absoluteexplore {
+      top: 111%;
+      left: 5%;
+    }
+    .populartekst {
+      width: 60%;
+      padding-left: 5%;
+      font-size: 80%;
+    }
+    .slider {
+      width: 70%;
+      right: -18%;
+      gap: 47%;
+      .item1 {
+        width: 500%;
+        height: 100%;
+        background-position: 30% 10%;
+      }
+    }
+  }
+  .plavo {
+    font-size: 80%;
+    h2 {
+      padding-top: 2%;
+      padding-bottom: 2%;
+    }
+    .absoluteflex {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      .itemsabslt {
+        .itemsbus {
+          width: 100%;
+          margin-bottom: 2%;
+          .price45 {
+            border-left: 7px dotted #909090;
+            .btn1 {
+              width: 65%;
+            }
+          }
+        }
+        .itemsall {
+          width: 87%;
+          margin-bottom: 2%;
+          .price85 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-left: 5px dotted #909090;
+            width: 20%;
+            p {
+              font-family: montbold;
+              color: $orange;
+              font-size: 120%;
+            }
+          }
+        }
+      }
+    }
+  }
+  .predfooter {
+    display: none;
+  }
+  .traveling {
+    display: flex;
+    justify-content: center;
+    padding: 2% 0;
+    height: 300vh;
+    .wcontainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .wrapper {
+        width: 90%;
+      }
+    }
+    .gradovi {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 80%;
+      width: 100%;
+      .centralno {
+        width: 100%;
+        height: 100%;
+        font-size: 80%;
+        .gridgradovi {
+          height: 80%;
+          width: 90%;
+          gap: 5%;
+          padding-left: 10%;
+        }
+      }
+      .container {
+        display: flex;
+        align-items: center;
+        width: 90%;
+      }
+      .lplavo {
+        height: 90%;
+        text-align: center;
+        font-size: 90%;
+        h3 {
+          padding-bottom: 7%;
+        }
+        p {
+          padding-bottom: 15%;
+        }
+        .btn1 {
+          position: relative;
+          left: 40%;
+          bottom: 20%;
+          width: 15%;
+        }
+      }
+      .container2 {
+        width: 90%;
+        height: 10%;
+        .dplavo {
+          width: 100%;
+          height: 80%;
+        }
+      }
+    }
+  }
+  .forma {
+    height: 100vh;
+    .containerforma {
+      justify-content: center;
+      .polje1 {
+        display: none;
+      }
+      .polje2 {
+        display: none;
+      }
+      .poljeforma {
+        width: 50%;
+        height: 120%;
+        #name {
+          height: 35%;
+        }
+        #e-mail {
+          height: 35%;
+        }
+        #message {
+          height: 80%;
+        }
+        .btn1 {
+          width: 35%;
+        }
+      }
+    }
+  }
+  footer {
+    font-size: 90%;
+    .wrapper {
+      width: 90%;
+    }
+  }
+}
+@media screen and (max-width: 375px) {
+  body {
+    width: 375px;
+    font-size: 90%;
+  }
+  .wrapper {
+    width: 375px;
+  }
+  .fa-solid.fa-magnifying-glass {
+    display: none;
+  }
+  .wrapper {
+    .nav {
+      .logo {
+        img {
+          width: 170%;
+          padding: 0;
+        }
+      }
+      .navglobalitems {
+        .navglb2 {
+          flex-direction: column;
+          height: 30vh;
+          align-items: center;
+          justify-content: center;
+          .menu {
+            width: 100%;
+            height: 60%;
+            ul {
+              flex-direction: column;
+              align-items: center;
+              font-size: 150%;
+              li {
+                padding: 0 0;
+              }
+            }
+          }
+          .sign {
+            height: 40%;
+            width: 100%;
+            justify-content: center;
+            padding-right: 0;
+            margin-right: 0;
+            ul {
+              flex-direction: column;
+              align-items: center;
+              font-size: 150%;
+              li {
+                padding: 0 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .cover {
+    background-position: 70% 20%;
+    background-attachment: local;
+    height: 120vh;
+    .absoluteright {
+      display: none;
+    }
+    .wrapper {
+      flex-direction: column;
+      .levo {
+        width: 100%;
+        margin-bottom: 15%;
+        h1 {
+          padding: 8% 0;
+          font-size: 370%;
+        }
+        p {
+          width: 90%;
+          padding-bottom: 8%;
+        }
+        .btns {
+          width: 100%;
+          .btn1 {
+            width: 60%;
+            text-align: center;
+            font-size: 100%;
+            height: 80%;
+          }
+          .btn2 {
+            width: 80%;
+            text-align: center;
+            align-items: center;
+            height: 80%;
+            p {
+              justify-content: flex-start;
+              text-align: center;
+              display: flex;
+              margin-top: 8%;
+              font-size: 100%;
+            }
+            i {
+              width: 10%;
+              margin-left: 20%;
+            }
+          }
+        }
+      }
+      .desno {
+        width: 100%;
+        flex-direction: column;
+        .left {
+          text-align: end;
+          h2 {
+            color: black;
+          }
+          p {
+            color: black;
+            padding-bottom: 5%;
+          }
+        }
+        .right {
+          transform: rotate(90deg);
+          position: relative;
+          right: 14%;
+          .headerright {
+            h2 {
+              padding-top: 20%;
+            }
+            img {
+              transform: rotate(360deg);
+            }
+          }
+        }
+      }
+    }
+  }
+  .destinations {
+    height: 100vh;
+    flex-direction: column;
+    .absoluteexplore {
+      left: 30%;
+      top: 123%;
+    }
+    .slider {
+      width: 100%;
+      right: -10%;
+      gap: 50%;
+      .item1 {
+        width: 500%;
+        height: 90%;
+        background-position: 50% 10%;
+      }
+      .item2 {
+        width: 500%;
+        height: 90%;
+      }
+    }
+    .populartekst {
+      padding-top: 10%;
+      width: 90%;
+      font-size: 110%;
+      text-align: center;
+      .btn1 {
+        display: none;
+      }
+    }
+  }
+  .plavo {
+    height: 180vh;
+    background-image: none;
+    h2 {
+      padding: 10% 0;
+      text-align: center;
+      width: 50%;
+      font-size: 160%;
+    }
+    .absoluteflex {
+      .itemsabslt {
+        .itemsbus {
+          flex-direction: column;
+          align-items: center;
+          .bus {
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            justify-content: center;
+            img {
+              width: 50%;
+              padding: 20% 0;
+            }
+          }
+          .aboutbus {
+            padding-right: 0;
+            text-align: center;
+            padding-bottom: 5%;
+          }
+          .price45 {
+            border-left: 0;
+            border-top: 2px dotted $svetlosiva;
+            width: 100%;
+            padding: 5% 0;
+            .btn1 {
+              width: 25%;
+              padding: 4% 0;
+            }
+          }
+        }
+        .itemsall {
+          width: 100%;
+          flex-direction: column;
+          align-items: center;
+          font-size: 100%;
+          font-size: 130%;
+          .icn {
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            justify-content: center;
+            img {
+              width: 70%;
+              padding: 20% 0;
+            }
+          }
+          .about {
+            padding-right: 0;
+            text-align: center;
+            padding-bottom: 5%;
+            width: 100%;
+          }
+          .price85 {
+            border-left: 0;
+            border-top: 2px dotted $svetlosiva;
+            width: 100%;
+            padding: 5% 0;
+          }
+        }
+      }
+    }
+  }
+  .traveling {
+    .wcontainer {
+      .wrapper {
+        .gradovi {
+          .container {
+            .lplavo {
+              .btn1 {
+                margin-right: 0;
+                width: 30%;
+                left: 35%;
+                bottom: 12%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .forma {
+    height: 80vh;
+    .wrapper {
+      width: 90%;
+      .containerforma {
+        height: 60%;
+        .poljeforma {
+          width: 100%;
+        }
+      }
+    }
+  }
+  footer {
+    height: 20vh;
+    .wrapper {
+      .footeritems {
+        flex-direction: column;
+        justify-content: center;
+        p {
+          order: 2;
+          text-align: center;
+        }
+        .social {
+          order: 1;
+          padding-bottom: 5%;
+          width: 30%;
+        }
+      }
+    }
+  }
+}

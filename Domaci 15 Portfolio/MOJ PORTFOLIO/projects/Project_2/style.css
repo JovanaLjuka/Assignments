@@ -1,0 +1,148 @@
+@font-face {
+    font-family: "Ubuntu";
+    src: url(font/UbuntuCondensed-Regular.ttf);
+}
+
+* {
+    font-family: Ubuntu;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #eee;
+}
+
+.wrapper {
+    width: 960px;
+    height: 100%;
+    margin: 0 auto;
+    font-family: Ubuntu;
+}
+
+header {
+    width: 100%;
+    height: 85px;
+    padding-top: 15px 30px;
+    margin: 0;
+    background-color: #B4B4B4;
+}
+
+header p {
+    float: left;
+    font-size: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 20px 0;
+    background-color: #B4B4B4;
+}
+
+img {
+    float: left;
+    width: 50px;
+    display: inline-block;
+    margin: 15px 10px 15px 30px;
+}
+
+.navigacija {
+    float: right;
+    width: 50%;
+    height: 100%;
+    margin-right: 30px;
+}
+
+.navigacija>ul {
+    text-decoration: none;
+    background-color: #B4B4B4;
+}
+
+.navigacija>ul>li>a {
+    text-decoration: none;
+    color: white;
+    background-color: #B4B4B4;
+}
+
+.navigacija>ul>li {
+    float: right;
+    display: inline-block;
+    list-style-type: none;
+    background-color: #B4B4B4;
+    margin-top: 16px;
+    margin-bottom: 15px;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: white;
+    padding-top: 16px;
+    padding-right: 15px;
+}
+
+.navigacija>ul>li:hover {
+    background-color: #dd5b17;
+    padding: 5px;
+}
+
+main>h1 {
+    margin: 30px auto 30px 15px;
+    text-align: left;
+}
+
+.wrapper2 {
+    margin-left: 14px;
+}
+
+.container {
+    display: inline-block;
+    width: 219px;
+    margin-bottom: 25px;
+    margin-right: 14px;
+}
+
+.container>img {
+    width: 219px;
+    margin: 0;
+    padding: 0;
+}
+
+.container>p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.container>a {
+    color: #B4B4B4;
+    background-color: #fff;
+    width: 40%;
+    padding: 5px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.container>a:hover {
+    background-color: #B4B4B4;
+    color: #fff;
+}
+
+.footer {
+    background-color: #928f8f;
+    height: 40px;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+.footer>p {
+    color: white;
+    font-family: Ubuntu;
+    font-size: 15px;
+    text-align: center;
+
+}
+
+.footer span {
+    text-decoration: underline;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prodavnica parfema</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo"><h1>Prodavnica parfema</h1></div>
+    </header>
+
+    <main>
+        <div id="filteri">
+            <label for="sortCena">Sortiraj prema ceni opadajuce:</label>
+            <input type="button" value="Sortiraj rastuce" id="sortCena">
+
+            <form action="">
+                <label for="pronadjiBrend">Pronadji brend:</label>
+                <input type="text" id="pronadjiBrend" name="pronadjiBrend" placeholder="Pronadji Brend">
+            </form>
+
+            <form action="">
+                <label for="cenovniRang">Cenovni rang</label>
+                <input type="range" min="0" max="500" value="500" id="cenovniRang">
+                <input type="button" name="dugme" id="btnCena" value="Pronadji artikle">
+            </form>
+        </div>
+
+        <div id="artikli">
+            <div class="blok">
+                <img src="" alt="">
+                <h3>Model</h3>
+                <h4>Dominantni miris:</h4>
+                <h4>150 EUR</h4>
+                <a class="korpaText" href="#" data-id="___">DODAJ U KORPU</a>
+            </div>
+        </div>
+    </main>
+
+<div id="modal"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

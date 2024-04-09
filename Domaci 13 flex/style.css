@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+.header {
+    display: flex;
+    height: 50%;
+    width: 100%;
+    flex-direction: column;
+}
+
+
+h1 {
+    color: red;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 50px;
+    align-items: last baseline;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prvi {
+    flex-grow: 1;
+}
+
+.drugi {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.treci {
+    display: flex;
+    flex-grow: 9;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+span {
+    font-weight: bold;
+}
+
+.cetvrti {
+    flex-grow: 0.5;
+}
+
+.drugi {
+    background-color: yellow;
+}
+
+.treci {
+    background-color: rgb(106, 205, 193);
+}
+
+.cetvrti {
+    background-color: rgb(56, 56, 56);
+}
+
+a {
+    color: white;
+}
+
+ul {
+    width: 20%;
+    margin-left: 10px;
+    height: auto;
+    display: flex;
+}
+
+.cetvrti>ul>li {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.wrapper2 {
+    display: flex;
+    flex-direction: row;
+    height: 45%;
+}
+
+.aboutme {
+    width: 30%;
+    height: auto;
+    background-color: rgb(229, 226, 226);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.heading {
+    width: 70%;
+    background-color: rgb(234, 231, 231);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.slika {
+    background-color: grey;
+    height: 70%;
+    margin: 10px;
+}
+
+.aboutme>h2,
+.aboutme>p {
+    margin-left: 10px;
+    justify-content: flex-start;
+}
+
+.heading>h2,
+.heading>p {
+    margin-left: 10px;
+    justify-content: flex-start;
+}
+
+footer {
+    height: 5%;
+    background-color: rgb(214, 211, 211);
+    display: flex;
+    justify-content: center;
+}
+
+footer>h2 {
+    display: flex;
+    align-items: end;
+}

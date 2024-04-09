@@ -1,0 +1,243 @@
+@media screen and (max-width: 1280px) {
+
+    h2 {
+        font-size: 1.7rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    section#profile {
+        margin: 3% 5rem;
+        gap: 5rem;
+    }
+
+    .right {
+        padding-top: 10%;
+        gap: 3%;
+        text-align: center;
+    }
+
+    .profilepic-container img {
+        height: 380px;
+        width: 380px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .btn-container {
+        width: 80%;
+        margin: 5% 5%;
+        text-align: center;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 5% 5%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    html {}
+
+    header {
+        height: 10vh;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    nav {
+        height: 10vh;
+        justify-content: space-between;
+    }
+
+    .nav-links {
+        gap: 1rem;
+        font-size: 1.4rem;
+    }
+
+    section#profile {
+        margin: 3% 3rem;
+        gap: 7rem;
+    }
+
+    .profilepic-container img {
+        height: 320px;
+        width: 320px;
+    }
+
+    .right {
+        padding-top: 10%;
+        gap: 2%;
+    }
+
+    h1 {
+        font-size: 1.9rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    .text1,
+    .text2 {
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    .socials-container {
+        margin-top: 3%;
+        gap: 40%;
+    }
+
+    #about .flexwrapper {
+        margin: 0 0;
+    }
+
+    .top {
+        gap: 5%;
+        margin: 5%;
+    }
+
+    .bottom {
+        width: 90%;
+        height: 140px;
+        padding: 1.4rem;
+    }
+
+    #skills {
+        margin: 5%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    #skills .flexwrapper {
+        margin: 5% 0;
+        gap: 5%;
+    }
+
+    #projects {
+        margin: 5% 0;
+    }
+
+    #projects .flexwrapper {
+        margin: 5% 0;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 10%;
+    }
+
+    #projects .container1,
+    #projects .container2,
+    #projects .container3 {
+        border-radius: 40px;
+        margin: 3% 10%;
+    }
+
+    .pic {
+        width: 80%;
+        height: 80%;
+        padding: 10% 5% 5% 5%;
+    }
+
+    #projects .tittle {
+        margin: 0 0;
+        font-size: 2.5rem;
+    }
+
+    .btn {
+        font-size: 1.2rem;
+    }
+
+    .btn-container {
+        margin: 5% 0;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .nav-links {
+        display: none;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    section#profile {
+        margin: 5% 2%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2%;
+    }
+
+    .right {
+        padding-top: 5%;
+    }
+
+    .socials-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20%;
+    }
+
+    .bottom {
+        width: 90%;
+        height: 180px;
+        padding: 1.4rem;
+    }
+
+    #skills {
+        margin: 5% 0;
+        height: auto;
+
+    }
+
+    #skills .flexwrapper {
+        margin: 5% 0;
+        flex-direction: column;
+        align-items: center;
+        gap: 3%;
+        justify-content: space-between;
+    }
+    .flexwrapper>.wrapper1,
+.flexwrapper>.wrapper2,
+.flexwrapper>.wrapper3 {
+    
+    width: 70%;
+    height: 70%;
+    padding: 1.5rem;
+    border-radius: 3rem;
+   margin-top: 5%;
+}
+
+#projects {
+    margin: 10% 0;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+#contact h1{
+    margin: 10%;
+}
+
+#contact button {
+    padding: 5px 0;
+    width: 50%;
+}
+
+#
+
+}

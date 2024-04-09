@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Demo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <script src="https://kit.fontawesome.com/d93292b34a.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body id="#home">
+    <header id="top">
+        <nav>
+            <div class="logo">
+                <h2>Jovana Ljuka</h2>
+            </div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="profile">
+            <div class="profilepic-container">
+                <img src="slike/cvpic.jpeg" alt="Jovana Ljuka profile picture">
+            </div>
+            <div class="right">
+                <div class="text-container">
+                    <p class="text1">Hello I'm</p>
+                    <h1>Jovana Ljuka</h1>
+                    <p class="text2">Front-end Developer</p>
+                </div>
+
+                <div class="socials-container">
+                    <a href="https://www.linkedin.com/in/jovana-ljuka-8280b5157/">
+                        <img src="slike/linkedin.png" alt="My Linkedin profile" class="icon">
+                    </a>
+                    <a href="https://github.com/JovanaLjuka">
+                        <img src="slike/github.png" alt="My Github profile" class="icon">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="flexwrapper">
+                <div class="top">
+                    <div class="experience">
+                        <img src="slike/experience.png" alt="experience-logo" class="icon">
+                        <h3>Experience</h3>
+                        <p>Code by Comtrade Front-end Development Course</p>
+                    </div>
+
+                    <div class="education">
+                        <img src="slike/education.png" alt="education-icon" class="icon">
+                        <h3>Education</h3>
+                        <p>Bachelors Degree</p>
+                    </div>
+
+                </div>
+
+                <div class="bottom">
+                    <p>I am newbie in Front-end Development World, and I want to represent my well
+                        learned skills, and my deep love for clean and functional design. My journey
+                        in web development started few years ago, and since then, I've been on a quest
+                        to create visually stunning and user-friendly websites. I thrive on challenges
+                        and believe in the power of code to transform concepts into reality.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="skills">
+
+            <h2>My Skills</h2>
+
+            <div class="flexwrapper">
+                <div class="wrapper1">
+                    <div class="container1">
+                        <img src="slike/checkmark.png" alt="experience-icon" class="icon">
+                    </div>
+
+                    <div class="container2">
+                        <h3>HTML</h3>
+                        <p>Experienced</p>
+                    </div>
+                </div>
+
+                <div class="wrapper2">
+                    <div class="container1">
+                        <img src="slike/checkmark.png" alt="experience-icon" class="icon">
+                    </div>
+                    <div class="container2">
+                        <h3>CSS</h3>
+                        <p>Experienced</p>
+                    </div>
+                </div>
+
+                <div class="wrapper3">
+                    <div class="container1">
+                        <img src="slike/checkmark.png" alt="experience-icon" class="icon">
+                    </div>
+                    <div class="container2">
+                        <h3>JS</h3>
+                        <p>Experienced</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="projects">
+            <h2>My Recent Projects</h2>
+            <div class="flexwrapper">
+                <div class="container1">
+                    <div class="pic">
+                        <img src="projects/first.png" alt="project1" class="project-img">
+                    </div>
+                    <h3 class="tittle">Project One</h3>
+                    <div class="btn-container">
+                        <a href="projects/Project_1/index.html"><button class="btn">Live Demo</button></a>
+                    </div>
+                </div>
+
+                <div class="container2">
+                    <div class="pic">
+                        <img src="projects/second.png" alt="project2" class="project-img">
+                    </div>
+                    <h3 class="tittle">Project Two</h3>
+                    <div class="btn-container">
+                        <a href="projects/Project_2/index.html"><button class="btn">Live Demo</button></a>
+                    </div>
+                </div>
+
+                <div class="container3">
+                    <div class="pic">
+                        <img src="projects/third.png" alt="project 3" class="project-img">
+                    </div>
+                    <h3 class="tittle">Project Three</h3>
+                    <div class="btn-container">
+                        <a href="projects/Project_3/index.html"><button class="btn">Live Demo</button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="wrapper">
+                <h1>Contact Me</h1>
+
+                <form action="#">
+
+                    <div class="row">
+                        <div class="input-group">
+                            <input type="text" id="name" required>
+                            <label for="name"><i class="fa-regular fa-user" style="color: #000000;"></i>Your
+                                Name</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="number" id="number" required>
+                            <label for="number"><i class="fa-solid fa-phone-flip" style="color: #00040a;"></i>Your
+                                Number</label>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="email" id="email" required>
+                        <label for="email"><i class="fa-regular fa-envelope" style="color: #000000;"></i>Your
+                            Email</label>
+                    </div>
+                    <div class="input-group">
+                        <textarea name="message" id="message" rows="8"></textarea>
+                        <label for="message"><i class="fa-regular fa-comment" style="color: #000000;"></i>Your
+                            Message</label>
+                    </div>
+
+                    <button type="submit">SUBMIT<i class="fa-regular fa-paper-plane"
+                            style="color: #000000;"></i></button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Copyright &#169; 2023 Jovana Ljuka. All Rights Reserved.</p>
+        <div class="btn-footer">
+            <button><a href="#top">Back to top</a></button>
+
+        </div>
+    </footer>
+</body>
+
+</html>
